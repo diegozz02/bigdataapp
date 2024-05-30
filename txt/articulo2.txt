@@ -1,0 +1,297 @@
+Recibido: 15 de septiembre del 2022 / Aceptado: 30 de noviembre del 2022 doi: https://doi.org/10.26439/interfases2022.n016.6028
+
+DISEÑO DE INTERFACES DE SISTEMAS INTERACTIVOS UTILIZANDO TÉCNICAS DE MACHINE LEARNING:
+UNA REVISIÓN DEL DISEÑO Y LA USABILIDAD
+
+
+
+Juliᴏ Vlᴀdiᴍɪʀ Quispᴇ Sᴏᴛᴀ julio.quispe17@unmsm.edu.pe https://orcid.org/0000-0003-1413-5160 Universidad Nacional Mayor de San Marcos, Perú
+
+RESUMEN. En el presente trabajo se exponen algunos enfoques planteados para el diseño de interfaces de usuario mediante técnicas de machine learning. En la primera parte, se hace una revisión de diversos enfoques para el diseño de interfaces, tales como los optimizadores combinacionales, el uso de frameworks y el diseño de interfaces libres de texto. En cuanto al diseño de interfaces con técnicas de machine learning, se observa que tienen como base la usabilidad y la experiencia del usuario o UX. Asimismo, el proceso de diseño utiliza interacciones que son almacenadas en sistemas de persistencia o bases de datos, que luego se analizan con técnicas de machine learning. Otro enfoque de diseño usa bosquejos y maquetados gráficos y, luego de evaluar su usabilidad, emplea algoritmos de reconocimiento de imágenes para generar las interfaces; estos diseños generalmente son para dispositivos móviles. Por otro lado, existen técnicas que también analizan la usabilidad, pero se enfocan más en las funciones corporales del usuario (movimiento, funciones biológicas como presión sanguínea, latidos del corazón, etcétera); estos datos también pueden analizarse con algoritmos de machine learning para generar interfaces de usuario.
+PALABRAS CLAVE: user interface (UI), experiencia del usuario (UX), machine learning (ML), usabilidad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912 // pp. 200-212
+
+Diseño de interfaces de sistemas interactivos utilizando técnicas de machine learning
+
+DESIGN OF INTERACTIVE SYSTEM INTERFACES USING MACHINE LEARNING TECHNIQUES: A REVIEW OF DESIGN AND USABILITY
+ABSTRACT. This article presents ditterent approaches to user interface design through machine learning techniques. It reviews various approaches to interface design, such as combinational optimizers, frameworks, and free-of-text interface design. Moreover, it shows how interface design with machine learning techniques is based on usability and user experience (UX). Likewise, the design process uses interactions stored in persistence systems or databases, which are then analyzed with machine learning techniques. Another design approach uses sketches and graphic layouts and, after evaluating their usability, uses image recognition algorithms to generate the interfaces; these designs are generally for mobile devices. Some techniques also analyze usability but focus more on the user’s bodily functions (movement, biological functions such as blood pressure, heartbeat, etcetera); this data can also be analyzed with machine learning algorithms to generate user interfaces.
+KEYWORDS: user interface (UI), user experience (UX), machine learning (ML), usability
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912                   201
+
+Julio Vladimir Quispe Sota
+
+
+1. INTRODUCCIÓN
+El diseño de interfaces de usuario para sistemas interactivos es bastante estudiado y cada vez existen mejores técnicas para generar interacciones mucho más intuitivas y cómodas para los usuarios. Pressman (2010) plantea que la flexibilidad de la interfaz es un aspecto muy importante para el diseño de la interfaz de usuario (UI, por sus siglas en inglés), dada la diversidad de usuarios que utilizarán el sistema. Por otro lado, Braun et al. (2021) muestran que las emociones son una gran fuente de entradas y salidas al interactuar con el sistema. También, mediante muestreo y obtención de datos, se puede producir un ciclo de retroalimentación para generar UI más adaptativas al usuario, sin dejar de prestar atención a aspectos tan diversos como los culturales y sociales. Yang (2017), por su parte, señala que aún no existen metodologías estandarizadas basadas en machine learning para el diseño de interfaces.
+Para Mezhoudi (2013), la experiencia del usuario (UX, por sus siglas en inglés) se puede capturar mediante las interacciones del usuario con el sistema, para luego ser almacenada y crear un conjunto de datos o dataset, donde una técnica de machine learning podría determinar patrones de comportamiento del usuario y, por consiguiente, se puedan generar interfaces más intuitivas o adaptativas. Es importante mencionar que las necesidades específicas de los usuarios pueden ser reconocidas con la ayuda de los algoritmos de machine learning.
+Este trabajo está estructurado de la siguiente manera: la sección 2 explica la metodología del estudio de revisión, la sección 3 describe los resultados del estudio y, en la sección 4, se plantean las discusiones. Finalmente, se encuentran las conclusiones y las referencias.
+
+2. METODOLOGÍA
+En este estudio, se plantearon las siguientes preguntas, que se orientan al conocimiento del estado del arte de las investigaciones sobre el diseño de interfaces de usuario y el uso de técnicas de machine learning:
+•  P1: ¿qué enfoques existen para el diseño de interfaces de usuario?
+• P2: ¿qué es la usabilidad en un sistema interactivo?
+•  P3: ¿hasta qué punto es aplicable machine learning en el diseño de interfaces de usuario?
+•  P4: ¿es necesaria la experiencia de usuario como base para la aplicación de una técnica de machine learning?
+•  P5: ¿de qué manera se aplica machine learning en el diseño de interfaces de usuario?
+
+
+202
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912
+
+Diseño de interfaces de sistemas interactivos utilizando técnicas de machine learning
+
+
+2.1 Búsqueda de artículos
+Para responder estas preguntas, se realizó la búsqueda de artículos en Google Scholar utilizando la siguiente cadena de búsqueda: design usability “user experience” UX “User Interface” UI “machine learning” ML “Artificial Intelligence” software engineering.
+El resultado fueron 479 trabajos, de los cuales se seleccionaron solo los que tenían que ver con el tema de estudio, eran de acceso abierto y, además, fueron publicados desde el año 2017. Los artículos de tipo revisión no fueron seleccionados. La Tabla 1 muestra un resumen de la cantidad de artículos obtenidos y su fuente principal.
+
+Tabla 1
+Cantidad de artículos seleccionados para el estudio
+Fuente        Número de artículos IEEE Xplore             17
+SciELO                1
+ResearchGate             3
+Otras fuentes             13
+Total                 34
+
+
+
+Se utilizó un texto de consulta sobre ingeniería de software para establecer el marco conceptual sobre el cual se define el proceso de diseño de interfaces de usuario. Una de las limitaciones de este estudio fue la falta de acceso a repositorios comerciales como Scopus, Web of Science y otros.
+
+3. RESULTADOS
+A partir de la revisión a los trabajos seleccionados en esta investigación, se puede responder a las cinco preguntas planteadas con las siguientes propuestas.
+
+3.1 Los enfoques para el diseño de interfaces de usuario
+En la actualidad, los tipos de interfaces de usuario (IU o UI, por sus siglas en inglés) son muy diversos, tales como gráficos interactivos, comandos de selección, interacción 3D, diseño de documentos, etcétera. Para esta diversidad de interfaces, se plantean métodos de diseño, como la optimización combinatoria propuesta por Oulasvirta et al. (2020). El trabajo se enfoca en la selección de las funciones de programa que son presentadas y manipuladas por el usuario, así como de los tipos de componentes y
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912                   203
+
+Julio Vladimir Quispe Sota
+
+
+propiedades que poseen; también, en asociar interacciones con cambios de estado en el programa y en la organización de los componentes en los contenedores para formar una jerarquía.
+La utilización de frameworks para el diseño de UI es, asimismo, un método de diseño. Por ejemplo, Sanctorum et al. (2019) plantean un framework que genera UI adaptativas, distribuidas e híbridas. Aplicando el framework, el diseño de la UI se divide en la capa activa, que contiene el código de las acciones que realizarán los componentes; otra capa que contiene los elementos de la UI; y, finalmente, la capa de modelos que vincula la capa activa y la capa de UI.
+Las UI cuyo principal medio de interacción es el ingreso de textos o comandos tienen una limitante para los usuarios por el idioma, sobre todo si la UI no utiliza el alfabeto latino o, peor aún, si los usuarios son analfabetos. En ese sentido, Ilyas et al. (2021) definen el concepto de interfaces libres de texto, las cuales no limitan al usuario a las interacciones de solo texto. Así, algunos frameworks permiten que el usuario pueda ubicar sectores de interfaz de usuario con texto, imágenes o símbolos.
+Por otro lado, Sboui et al. (2017) utilizan la combinación del desarrollo de interfaces de usuarios basado en modelos (MBUID) y la línea de productos de software dinámico (DSPL) para plantear el modelo UI-DSPL, que permite generar una UI adaptable a un contexto. Este modelo de diseño plantea dos fases: la primera, dedicada al desarrollo de una UI inicial, mientras que la segunda funciona en tiempo de ejecución; esta permitirá adaptar la UI a los cambios del contexto que provienen por parte del usuario.
+
+3.2 La usabilidad en un sistema interactivo
+La usabilidad de la interfaz de usuario es esencial para la interacción de los usuarios con el sistema. Para Ferreira et al. (2020), “la usabilidad es el grado en que un producto o sistema puede ser utilizado por usuarios específicos para lograr objetivos específicos con eficacia, eficiencia y satisfacción en un contexto de uso específico”. Por otro lado, según Sánchez (2015), el grado de usabilidad puede ser medido empíricamente usando las pruebas o experimentos con los usuarios. El grado de usabilidad no define que una interfaz sea buena o mala, sino que satisfaga a un grupo mayoritario de una población objetivo. De acuerdo con Sackl et al. (2020), los usuarios —tanto novatos como experimentados— muestran preferencia por interfaces optimizadas, que utilizan descripción en los componentes.
+
+3.3 La aplicación de machine learning en el diseño de interfaz de usuario
+Para Yang (2017), mediante machine learning (ML), se busca optimizar la experiencia del usuario (UX) en sistemas interactivos, de tal forma que se puedan generar
+
+
+
+204
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912
+
+Diseño de interfaces de sistemas interactivos utilizando técnicas de machine learning
+
+
+interfaces más adaptativas que reduzcan el esfuerzo de navegación de los usuarios. Según Yang (2017), los expertos en UX deben construir interfaces de tal manera que se puedan rastrear las interacciones de los usuarios, y estas se puedan usar como fuente de datos para los algoritmos de ML. En ese sentido, ML provee un conjunto de patrones de interfaz de usuario a fin de adaptar o automatizar la navegación en la interfaz y poder cambiar a varios contextos para diferentes usuarios en tiempo de ejecución.
+Otra propuesta es la de Akinsola et al. (2021), que consiste en la fusión de una técnica de inteligencia artificial con una interfaz de usuario para generar un híbrido denominado intelligent user interface (IUI). Esta nueva interfaz es capaz de minimizar los errores que pueda cometer el usuario al momento de utilizar el sistema, prevenir riesgos de ciberseguridad y funcionar como un asistente para el usuario. Las técnicas para el diseño de la IUI se pueden resumir en tres puntos:
+1. Obtención de entradas por parte del usuario de manera inteligente, lo que se puede realizar a través de detección de movimientos, reconocimiento de rostro y expresiones, procesamiento de lenguaje natural, entre otros.
+2. Modelado de usuario, que indica todas las técnicas de comunicación que permitan la adaptación de la interacción humano-máquina en diferentes entornos.
+3. Generación de explicación, técnica que se enfoca en la capacidad de habilitar un sistema de explicación para los usuarios como agentes de UI, retroali- mentación, entre otros.
+En la actualidad, la interacción con los sistemas computacionales es muy diversa. Las fuentes de entrada son más naturalistas, tales como el habla, los gestos
+o la mirada. Además, el estudio de la interacción no debe limitarse a computadoras
+o dispositivos portables, como celulares, tabletas, etcétera. Braun et al. (2021) plantean el concepto de UI afectiva para la conducción de automóviles. Tomando como base la detección de emociones que provienen del conductor, este modelo considera las preferencias y características permanentes de los usuarios. En ese sentido, los sistemas pueden adaptarse a largo plazo mediante la recopilación de conocimientos y estados de usuario para que puedan reaccionar espontáneamente, a fin de mejorar una situación.
+Otra aplicación de ML es anticipar la navegabilidad en las aplicaciones. Joo y Lee (2019) proponen el uso de un framework denominado WebProfiler para la captura de las interacciones (clics o navegación entre páginas) de los usuarios, de tal modo que se pueda predecir la navegabilidad en la aplicación web. En esa línea, Cruz-Benito et al. (2017) aplican técnicas de ML y el enfoque de la prueba A/B para detectar
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912                   205
+
+Julio Vladimir Quispe Sota
+
+
+las preferencias de usuario, el comportamiento y la versión óptima del formulario para todas las clases de usuarios que utilicen la aplicación. Además, se construyen modelos usando algoritmos de ML, con los cuales se extraen las características más importantes y luego se agrupa a los usuarios según sus similitudes; a partir de ello, se generan las reglas heurísticas entre las diferentes versiones de los formularios web para obtener el más adecuado por cada grupo de usuarios.
+
+3.4 El rol de la experiencia del usuario para la aplicación de una técnica de
+machine learning en el diseño
+Yang (2018) plantea las siguientes maneras de implementar el rol de la UX cuando se desea aplicar una técnica de ML para el diseño de UI.
+
+3.4.1 Agregar un machine learning a una experiencia de usuario existente
+Según Yang (2018), muchos especialistas diseñadores no consideran la aplicación de ML en sus diseños, además de que esta no es muy clara, a pesar de que es muy utilizada en diversas áreas. Asimismo, la experiencia de usuario (UX) no puede ser una ocurrencia tardía para la aplicación de ML, dado que, para la comunidad de especialistas en diseño y desarrollo, la usabilidad y la UX deben ser consideradas desde etapas tempranas en el proceso. Los diseñadores que utilizan con regularidad una técnica ML, primero, ejecutan la aplicación y a partir de allí se buscan patrones de comportamiento del usuario.
+
+3.4.2 Agregar una experiencia de usuario a un machine learning existente
+Para Yang (2018), a través del análisis del contexto tanto cultural como social de los usuarios, se determinará el éxito del uso de ML. En la industria, encontrar el diseño adecuado no será muy simple si se utilizan procedimientos tradicionales; sin embargo, un modelo de ML no garantiza una interfaz óptima, pero sí facilita muchos aspectos de navegabilidad, usabilidad y adaptabilidad. Este planteamiento es reforzado por otros autores que sostienen que la aplicación del modelo ML puede no ser suficiente para que un usuario tenga un enganche con el sistema. Hay casos en los cuales existe una disrupción entre un ML y la UX, por cuestiones sociales, culturales, etcétera.
+
+3.5 Las técnicas de machine learning aplicadas en el diseño de interfaz de usuario
+Las propuestas revisadas abarcan el diseño de estructuras complejas capaces de interpretar y plantear reglas de comportamiento a partir del almacenamiento de interacciones del usuario con el sistema. Interacciones que utilizan reconocimiento
+
+
+206
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912
+
+Diseño de interfaces de sistemas interactivos utilizando técnicas de machine learning
+
+
+de movimientos para la navegabilidad en el sistema y algoritmos de reconocimiento de imágenes, tales como las redes neuronales convolucionales, para diseñar la interfaz a partir de una maqueta en papel o en imagen digital.
+
+3.5.1 Adaptación de la interfaz de usuario basada en la retroalimentación y machine learning
+Mezhoudi (2013) se enfoca en la premisa de asegurar la adaptabilidad del aprendizaje mediante la interacción del usuario. Para llegar a este objetivo, se necesitan estructuras más complejas como un módulo de gestión de adaptación de reglas (ARM, por sus siglas en inglés). Las reglas se almacenan en un sistema de persistencia, del cual se pueden obtener los conjuntos de datos y, mediante el ARM, se inicia el proceso de entrenamiento de acuerdo a la UX del sistema. La retroalimentación hace posible recapitular las experiencias de usuarios registradas, en las que se pueden determinar tanto sus preferencias como sus necesidades. Un concepto que implica adaptabilidad es la interfaz de usuario abstracta, y los modelos ML tienen la potencialidad para generar UI adaptativas. Por ejemplo, los widgets seleccionados pueden ser gestionados desde un sistema operativo mediante un algoritmo de ML.
+Para finalizar esta sección, cabe mencionar que el aprendizaje adaptativo es propio del usuario, es decir, de su interacción y la retroalimentación, que está disponible en una capa de persistencia en el ARM, sobre la cual se puede realizar un proceso de ML para mejorar aspectos de navegabilidad y usabilidad.
+
+3.5.2 El prototipado de una interfaz de usuario y el reconocimiento de imágenes
+Buschek et al. (2020) plantean integrar ML en el proceso de diseño de interfaces y utilizan un framework denominado Paper2Wire, que tiene por objetivo integrar el proceso de maquetado y su conversión a la versión digital del diseño.
+Moran et al. (2018) proponen un modelado basado en bosquejos en papel que puede implementar una UI. Los autores plantean usar un modelo de CNN o red neuronal convolucional que utiliza 8878 aplicaciones más populares de Google Play ejecutadas con GUI-ripping (generación de ejecuciones automáticas); luego se extraen las capturas de pantalla más populares con las que la CNN fue entrenada. En resumen, es una aplicación de ingeniería reversa. Los aspectos de análisis del correcto diseño de la UI usan experiencias basadas en adaptabilidad y usabilidad de sistemas interactivos. Este prototipado plantea tres fases para el diseño. La primera es la detección de componentes mediante análisis o parseo de diferentes formatos de archivos de imágenes o técnicas de visión computacional para reconocer los componentes GUI que están siendo utilizados en el maquetado de la UI; en esta etapa se establecen las jerarquías de los componentes. La siguiente fase es la clasificación
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912                   207
+
+Julio Vladimir Quispe Sota
+
+
+de componentes GUI detectados del maquetado en elementos específicos de GUI mediante CNN. La última etapa es el ensamblaje en una aplicación; después de determinar la correspondencia de los componentes GUI, estos son llevados a código fuente a manera de nodos de un árbol GUI. Al finalizar todo el proceso, se debe obtener una UI similar al modelado desarrollado en una maqueta.
+
+3.5.3 La usabilidad y los dispositivos de pantallas pequeñas
+Shackel y Richardson (1991) definen la usabilidad como la combinación de eficiencia, eficacia y satisfacción. En todo momento, la usabilidad es evaluada por el usuario cada vez que interactúa con el sistema.
+La usabilidad entra en juego cuando el espacio para implementar los controles o componentes de la UI es muy limitado. Lee et al. (2018) plantean una alternativa para implementar una UI que cumpla con los requisitos de usabilidad, que consiste en utilizar mecanismos de detección de movimientos implementados en estos dispositivos. Cada movimiento realizado por el usuario es detectado y se le empareja una acción que debe realizar el sistema; es decir, se define navegabilidad y selección. Incluso se hace una detección de errores cuando un movimiento no es considerado como entrada para una acción del sistema. Una UI con este diseño plantea una interacción naturalista con el sistema. Ejemplos de estos dispositivos son los relojes inteligentes, reproductores de música o dispositivos enfocados en la detección de funciones biométricas, como detección de pulso o medición de ritmo cardíaco.
+
+4. DISCUSIÓN
+En primera instancia, se revisaron los enfoques actuales para el diseño de interfaces sin la utilización de ML como parte de su proceso; entre estos, se pueden destacar los modelos como la optimización combinatoria o la utilización de frameworks para el diseño de la UI. La siguiente propuesta plantea crear interfaces libres de texto, es decir, no utilizar como principal fuente de entradas para realizar la interacción con el sistema textos o cadenas de caracteres, pues el usuario puede tener limitaciones de idioma u otro tipo, tales como lectura o escritura, por lo que conviene enfocarse más en interacciones a través de símbolos e imágenes. El último enfoque revisado muestra el diseño como una línea de producción de software dinámico: mediante la combinación de los conceptos de MBUID y DSLP, los diseñadores son capaces de diseñar UI que pueden adaptarse al contexto del usuario, priorizando la reusabilidad y abstracción. Luego se plantean los enfoques en los cuales el ML es parte del proceso de diseño de la UI y la UX, como el registro de la UX para detectar patrones de comportamiento en la utilización del sistema. Este planteamiento podría ser la base para implementar sistemas interactivos en versiones superiores; es decir, cuando
+
+
+208
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912
+
+Diseño de interfaces de sistemas interactivos utilizando técnicas de machine learning
+
+
+un sistema es implementado por primera vez, es posible registrar o al menos tener una bitácora de las interacciones del usuario con el sistema. Esta acción nos permite determinar patrones y plantear una interfaz más adaptativa para el usuario en una siguiente versión. Ejemplos de esto son las cookies de las webs que nos indican preferencias o costumbres de navegación.
+El maquetado, como base del diseño de interfaces a partir de repositorios de imágenes con los cuales se entrenarán algoritmos de CNN y sistemas como REDRAW en combinación con el algoritmo KNN, es capaz de crear prototipos de GUI para dispositivos móviles. La aplicación de este enfoque puede tener inconvenientes en el diseño, puesto que es muy dependiente de los especialistas en UX y UI. Un diseñador de muy poca experiencia podría omitir aspectos de usabilidad o funcionalidad, además de que un ML usando visión computacional o técnicas de parseo tiene efectividad limitada en algunos casos.
+La navegabilidad y la interacción naturalistas mediante detección de movimiento en dispositivos de pantalla pequeña nos otorgan interacciones más fáciles. Otro aspecto de usabilidad muy importante, la navegabilidad y selección, se atiende con este enfoque; movimientos que realizan nuestras manos o alguna parte de nuestro cuerpo sirven como entradas para la interacción con el sistema.
+La disponibilidad de un histórico de interacciones debería permitir la capacidad de implementar una interfaz más adaptativa al usuario, con la posibilidad de determinar posiciones de los controles o qué tipo de estos se pueden usar en una UI para que más se acomoden al usuario. Como menciona Pressman (2010) en el capítulo de interfaces, crear una interfaz que sea capaz de leer la mente del usuario.
+
+5. CONCLUSIONES
+Las propuestas que no usan ML en el proceso de diseño de UI plantean emplearlo en trabajos futuros. Las interacciones basadas en texto presentan limitaciones para muchos usuarios por el idioma o incluso el analfabetismo. La tecnología de ML aún no es un estándar para el diseño de interfaces, puesto que los diseñadores de UI y UX no proponen una metodología de aplicación en el diseño de interfaces de usuario. El maquetado debe considerar desde el principio del proceso la UX. Las técnicas de detección de imágenes como base para el diseño de interfaces generan buenas propuestas de GUI, siempre que el diseñador responsable del maquetado considere todas las características de usabilidad. Las interfaces más sofisticadas usan como medios de interacción con el sistema funciones corporales o biológicas, tales como movimiento de brazos, piernas, gestos e incluso emociones. La utilización de machine learning para aplicaciones, como distribución de elementos de GUI o selección de
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912                   209
+
+Julio Vladimir Quispe Sota
+
+
+elementos GUI más convenientes, colores o jerarquía de distribución de módulos más complejos, no se ha desarrollado como metodología de diseño.
+
+REFERENCIAS
+Akinsola, J. E. T., Akinseinde, S., Kalesanwo, O., Adeagbo, M., Oladapo, K., Awoseyi, A., & Kasali, F. (2021). Application of artificial intelligence in user interfaces design for cyber security threat modeling. En L. M. Castro, D. Cabrero & R. Heimgärtner (Eds.), Software usability. IntechOpen. https://www.intechopen. com/chapters/76094
+Braun, M., Weber, F., & Alt, F. (2021). Attective automotive user interfaces. Reviewing the state of driver attect research and emotion regulation in the car. ACM Computing Surveys (CSUR), 54(7), 1-26. https://doi.org/10.1145/3460938
+Buschek, D., Anlautt, C., & Lachner, F. (2020, September). Paper2Wire: A case study of user-centred development of machine learning tools for UX designers. En Proceedings of the Conference on Mensch und Computer (pp. 33-41). https:// dl.acm.org/doi/abs/10.1145/3404983.3405506
+Cruz-Benito, J., Vázquez-Ingelmo, A., Sánchez-Prieto, J. C., Therón, R., García- Peñalvo, F. J., & Martín-González, M. (2017). Enabling adaptability in web forms based on user characteristics detection through A/B testing and machine learning. IEEE Access, 6, 2251-2265. https://ieeexplore.ieee.org/ abstract/document/8240912
+Ferreira,J.M.,Acuña,S.T.,Dieste,O.,Vegas,S.,Santos,A.,Rodríguez,F.,&Juristo,N.(2020). Impact of usability mechanisms: An experiment on efficiency, ettectiveness and user satisfaction. Information and Software Technology, 117, 106195. http://jultika.oulu.fi/files/nbnfi-fe202002054561.pdf
+Ilyas, Q. M., Ahmad, M., Zaman, N., Alshamari, M. A., & Ahmed, I. (2021). Localized text-free user interfaces. IEEE Access, 10, 2357-2371. https://ieeexplore.ieee. org/stamp/stamp.jsp?tp=&arnumber=9665747
+Joo, M., & Lee, W. (2019). WebProfiler: User interaction prediction framework for web applications. IEEE Access, 7, 154946-154958. https://ieeexplore.ieee.org/ abstract/document/8880603
+Lee, K. T., Yoon, H., & Lee, Y. S. (2018). Implementation of smartwatch user interface using machine learning based motion recognition. En 2018 International Conference on Information Networking (ICOIN) (pp. 807-809). http://csc. villanova.edu/~beck/csc8570/papers/lee.pdf
+
+
+
+
+210
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912
+
+Diseño de interfaces de sistemas interactivos utilizando técnicas de machine learning
+
+
+Mezhoudi, N. (2013). User interface adaptation based on user feedback and machine learning. En Proceedings of the companion publication of the 2013 International Conference on Intelligent User Interfaces Companion (pp. 25-28). https://dial. uclouvain.be/pr/boreal/object/boreal%3A153816/datastream/PDF_01/view
+Moran, K., Bernal-Cárdenas, C., Curcio, M., Bonett, R., & Poshyvanyk, D. (2018). Machine learning-based prototyping of graphical user interfaces for mobile apps. IEEE Transactions on Software Engineering, 46(2), 196-221. https:// ieeexplore.ieee.org/abstract/document/8374985
+Oulasvirta, A., Dayama, N. R., Shiripour, M., John, M., & Karrenbauer, A. (2020). Combinatorial optimization of graphical user interface designs. Proceedings of the IEEE, 108(3), 434-464. https://ieeexplore.ieee.org/stamp/stamp. jsp?tp=&arnumber=9000519
+Pressman, R. S. (2010). Ingeniería del software. Un enfoque práctico. McGraw-Hill.
+Sackl, M., Steinmaurer, A., Cheong, C., Cheong, F., Filippou, J., & Gütl, C. (2020). sCool: Impact on human-computer interface improvements on learner experience in a game-based learning platform. En International Conference on Interactive Collaborative Learning (pp. 439-451). Springer. https://www.researchgate.net/ profile/Alexander-Steinmaurer-3/publication/350001425_sCool_Impact_ on_Human-Computer_Interface_Improvements_on_Learner_Experience_ in_a_Game-Based_Learning_Platform/links/606cb77092851c4f268661c4/ sCool-Impact-on-Human-Computer-Interface-Improvements-on-Learner- Experience-in-a-Game-Based-Learning-Platform.pdf
+Sánchez, W. O. (2015). La usabilidad en ingeniería de software: definición y características. Ing-novación, 2, 7-21. http://www.redicces.org.sv/jspui/ bitstream/10972/1937/1/2.%20La%20usabilidad%20en%20Ingenieria%20 de%20Software-%20definicion%20y%20caracteristicas.pdf
+Sanctorum, A., & Signer, B. (2019). A unifying reference framework and model for adaptive distributed hybrid user interfaces. En 2019 13th International Conference on Research Challenges in Information Science (RCIS) (pp. 1-6). https://ieeexplore.ieee.org/abstract/document/8877048
+Sboui, T., Ayed, M. B., & Alimi, A. M. (2017). A UI-DSPL approach for the development of context-adaptable user interfaces. IEEE Access, 6, 7066-7081. https:// ieeexplore.ieee.org/abstract/document/8194842
+Shackel, B., & Richardson, S. J. (Eds.). (1991). Human factors for informatics usability.
+Cambridge University Press.
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912                   211
+
+Julio Vladimir Quispe Sota
+
+
+Yang, B., Wei, L., & Pu, Z. (2020). Measuring and improving user experience through artificial intelligence-aided design. Frontiers in Psychology, 11, 595374. https://www.frontiersin.org/articles/10.3389/fpsyg.2020.595374/full
+Yang, Q. (2017). The role of design in creating machine-learning-enhanced user experience. En The AAAI 2017 Spring Symposium on Designing the User Experience of Machine Learning Systems (pp. 406-411). https://www.aaai.org/ ocs/index.php/SSS/SSS17/paper/viewFile/15363/14575
+Yang, Q. (2018). Machine learning as a UX design material: How can we imagine beyond automation, recommenders, and reminders? AAAI Spring Symposia. https:// www.researchgate.net/profile/Qian-Yang-19/publication/324077664_ Machine _Learning _as_a _UX _Design_Material _How_Can_We _ Imagine_Beyond_ Automation_Recommenders_and_Reminders/ links/5b3cfe2ca6fdcc8506f560e1/Machine-Learning-as-a-UX-Design- Material-How-Can-We-Imagine-Beyond-Automation-Recommenders-and- Reminders.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+212
+INTERFASES n.° 16 // diciembre 2022 // ISSN 1993-4912
